@@ -2,7 +2,7 @@
 
 title "Masuk"
 
-|Event Organizer|
+|Pengelola Event|
     start
     repeat 
     repeat
@@ -10,7 +10,7 @@ title "Masuk"
 |Sistem|
     backward :Menampilkan pesan kesalahan validasi;
     repeat while () is (Username atau password tidak valid) not (Username dan password valid)
-|Event Organizer|
+|Pengelola Event|
     :Menekan tombol masuk;
 |Sistem|    
     backward :Menampilkan pesan kesalahan kredensial;
