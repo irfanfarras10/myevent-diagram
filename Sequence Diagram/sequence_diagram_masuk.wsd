@@ -18,7 +18,6 @@
     participant "__:JwtTokenUtil__" as util3
     participant "__:Jwts__" as util4
  
-    ' frontend flow
     loop username atau password tidak valid
         eo -> view1: Memasukkan username
         activate eo
@@ -42,11 +41,11 @@
     activate util1
     util1 -> util2: .apiRequestPost(requestBody)
     activate util2
-    ' backend flow
+
     alt kredensial tidak cocok
         util2 -> controller2: .authenticate(username, password)
         activate controller2
-        controller2 --> util2: JSON API respon
+        controller2 --> util2: JSON API response
         util2 --> util1: response
         util1 --> controller1: response
         controller1 --> view1: errorMessage
@@ -69,9 +68,7 @@
         controller1 -> prefs: .setAuthToken(token)
         activate prefs
         controller1 --> view1: dispose
-        controller1 --> eo: Menampilkan halaman utama
+        view1 --> eo: Menampilkan halaman utama
     end
-
-   
 
 @enduml
