@@ -2,12 +2,12 @@
 
 title "Keluar"
 
-|Pengelola Event|
+|Penyelenggara Event|
     start
     :Membuka menu navigasi;
 |Sistem|
     :Menampilkan menu navigasi;
-|Pengelola Event|
+|Penyelenggara Event|
     :Menekan tombol keluar;
 |Sistem|
     :Menampilkan dialog konfirmasi;

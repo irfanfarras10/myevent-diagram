@@ -2,24 +2,24 @@
 
 title "Registrasi Akun"
 
-|Pengelola Event|
+|Penyelenggara Event|
     start
     :Membuka halaman registrasi akun;
 |Sistem|
     :Menampilkan halaman registrasi akun;
-|Pengelola Event|
+|Penyelenggara Event|
     repeat
     repeat
-    :Memasukkan data username, nama Pengelola Event, e-mail, password, dan nomor handhphone; 
+    :Memasukkan data username, nama Penyelenggara Event, e-mail, password, dan nomor handhphone; 
 |Sistem|
     repeat while () is (Data tidak valid) not (Data valid)
-|Pengelola Event|
+|Penyelenggara Event|
     :Menekan tombol daftar;
 |Sistem| 
     :Mendaftarkan akun;
     repeat while () is (Username atau e-mail sudah digunakan) not (Data valid)
     :Menampilkan pesan registrasi akun berhasil;
-|Pengelola Event|
+|Penyelenggara Event|
     :Menekan tombol OK;
 |Sistem|
     :Mengarahkan ke halaman masuk;
