@@ -11,7 +11,7 @@ title "Masuk"
     backward :Menampilkan pesan kesalahan validasi;
     repeat while () is (Username atau password tidak valid) not (Username dan password valid)
 |Event Organizer|
-    :Mengklik tombol masuk;
+    :Menekan tombol masuk;
 |Sistem|    
     backward :Menampilkan pesan kesalahan kredensial;
     repeat while () is (Username atau password tidak sesuai) not (Username dan password sesuai)
