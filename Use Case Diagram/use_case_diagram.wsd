@@ -1,11 +1,11 @@
 @startuml "myevent_activity_diagram"
     left to right direction
 
-    actor "Pengelola Event" as eo
+    actor "Penyelenggara Event" as eo
     actor "Peserta Event" as peserta
 
     rectangle MyEvent {
-        ' use case pengelola event
+        ' use case Penyelenggara Event
         usecase "Registrasi Akun" as UC1
         usecase "Masuk" as UC2
         usecase "Keluar" as UC3
