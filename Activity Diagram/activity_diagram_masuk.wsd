@@ -1,0 +1,21 @@
+@startuml "activity_diagram_masuk"
+
+title "Masuk"
+
+|Event Organizer|
+    start
+    repeat 
+    repeat
+    :Memasukkan username dan password;
+|Sistem|
+    backward :Menampilkan pesan kesalahan validasi;
+    repeat while () is (Username atau password tidak valid) not (Username dan password valid)
+|Event Organizer|
+    :Mengklik tombol masuk;
+|Sistem|    
+    backward :Menampilkan pesan kesalahan kredensial;
+    repeat while () is (Username atau password tidak sesuai) not (Username dan password sesuai)
+    :Mengarahkan ke halaman utama;
+    stop
+    
+@enduml
