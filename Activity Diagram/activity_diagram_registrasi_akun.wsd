@@ -1,0 +1,25 @@
+@startuml "activity_diagram_masuk"
+
+title "Registrasi Akun"
+
+|Event Organizer|
+    start
+    :Membuka halaman registrasi akun;
+|Sistem|
+    :Menampilkan halaman registrasi akun;
+|Event Organizer|
+    repeat
+    repeat
+    :Memasukkan data username, nama event organizer, e-mail, password, dan nomor handhphone; 
+    :Menekan tombol daftar;
+|Sistem|
+    repeat while () is (Data tidak valid) not (Data valid)
+    :Mendaftarkan akun;
+    repeat while () is (Username atau e-mail sudah digunakan) not (Data valid)
+    :Menampilkan pesan registrasi akun berhasil;
+|Event Organizer|
+    :Menekan tombol OK;
+|Sistem|
+    :Mengarahkan ke halaman masuk;
+    stop
+@enduml
