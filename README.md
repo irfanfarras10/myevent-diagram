@@ -1,2 +1,2 @@
 # myevent-diagram
-UML for MyEvent Application
+Diagram for MyEvent Application
