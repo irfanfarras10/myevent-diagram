@@ -81,29 +81,29 @@
     activate repository1
     alt #6fd0f6 registrasi berhasil
         repository1 --> service1: UserDao
-        deactivate
         service1 --> controller2: UserDao
-        deactivate
         controller2 --> util2: JSON API response
-        deactivate
         util2 --> util1: response
-        deactivate
         util1 --> controller1: response
-        deactivate
         controller1 --> view1: message
         view1 --> eo: Menampilkan pesan registrasi berhasil
         eo -> view1: Menekan tombol OK
-        deactivate
         view1 -> controller1: .ofAllNamed(RouteName.signInScreen)
-        deactivate
         view1 --> eo: Menampilkan halaman masuk
+      
     else registrasi gagal
         repository1 --> service1: UserDao
+        deactivate
         service1 --> controller2: UserDao
+        deactivate
         controller2 --> util2: JSON API response
+        deactivate
         util2 --> util1: response
+        deactivate
         util1 --> controller1: response
+        deactivate
         controller1 --> view1: errorMessage
+        deactivate
         view1 --> eo: Menampilkan pesan registrasi gagal    
     end 
 
